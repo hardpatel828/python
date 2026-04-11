@@ -1,23 +1,12 @@
 # Write a function that takes a string (asks the user for a long string containing multiple words) and Print
 # back to the user the same string, except with the words in backwards order.
 
-# Function to reverse word order
-def reverse_words () :
-    # Take input from the user
-    string = input ( " Enter a sentence = " )
+string = input ( " Enter a sentence = " )
+ 
+words = string.split ()
 
-    # Split sentence into words
-    words = string.split ()
+words.reverse()
 
-    # Reverse the list of words
-    reversed_words = words [ ::-1 ]
+result = " ".join ( words )
 
-    # Join words back into a string
-    result = " ".join ( reversed_words )
-
-    # Print the result
-    print ( " Sentence with words reversed = " )
-    print ( result )
-
-# Call the function
-reverse_words ()
+print ( " Sentence with words reversed = ",result)
