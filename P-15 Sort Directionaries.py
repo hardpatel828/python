@@ -1,21 +1,11 @@
 # Develop a program to Sort Python Dictionaries by Key or Value using Lambda.
 
-# Create a dictionary
-data = {3: 'C', 1: 'A', 2: 'B', 5: 'E', 4: 'D'}
+data = {5: 'C', 3: 'A', 1: 'B', 4: 'E', 2: 'D'}
 
-# Sort dictionary by key using lambda
 sorted_by_key = dict(sorted(data.items(), key=lambda x: x[0]))
 
-# Print result
-print("Dictionary sorted by key:")
+print("Dictionary sorted by key = ",sorted_by_key)
 
-
-# Create a dictionary
-data = {3: 'C', 1: 'A', 2: 'B', 5: 'E', 4: 'D'}
-
-# Sort dictionary by value using lambda
 sorted_by_value = dict(sorted(data.items(), key=lambda x: x[1]))
 
-# Print result
-print("Dictionary sorted by value:")
-print(sorted_by_value)
+print("Dictionary sorted by value = ",sorted_by_value)
